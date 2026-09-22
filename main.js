@@ -6,22 +6,23 @@
     //let elementoimg = document.querySelector('img')
     //elementoimg.src= "pic_bulboff.gif"
 //}
-let on=1;
-function encender(){
-    let elementoimg = document.querySelector('img')
-   
-    if(on=1){
-        elementoimg.src= "pic_bulbon (1).gif"
-        on=0;
-    }else[
-        elementoimg.src= "pic_bulboff.gif"
-          on=1;
-    ]
+let on = 0;
 
-    
-    
+function encender() {
+    let elementoimg = document.querySelector('img');
 
+    if (on == 0) {
+        elementoimg.src = "pic_bulbon (1).gif";
+        on = 1;
+    } else {
+        elementoimg.src = "pic_bulboff.gif";
+        on = 0;
+    }
 }
+    
+    
+
+
 
 //estructura de control
 //1 = verdadero
